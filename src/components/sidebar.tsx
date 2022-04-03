@@ -2,7 +2,7 @@ import React from "react";
 import { Link,HashRouter } from "react-router-dom"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faCode, faEnvelope, faHouseUser, faLaptopCode,  faUserLarge  } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faCode, faEnvelope, faHouseUser,  faUserLarge  } from "@fortawesome/free-solid-svg-icons";
 
 import '../styles/sidebar.scss'
 const Sidebar: React.FC = () => {

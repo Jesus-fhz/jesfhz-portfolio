@@ -1,0 +1,117 @@
+@import './global.scss';
+.home{
+    display: flex;
+    width:100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    img{
+        border-radius: 50%;
+        max-width: 300px;
+        filter: drop-shadow(0 0mm 2mm $main-color);
+        margin-right: 15px;
+       
+    }
+
+    .intro{
+        padding: 20px;
+        width: 60%;
+    h1{
+        font-size: 4rem;
+        color: $main-color;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-size: 2rem;
+        color: $main-font-color;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $secondary-font-color;
+        margin-bottom: 15px;
+
+        span{
+            color: $main-font-color;
+        }
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+        button{
+            all: unset;
+            background-color: $main-color;
+            color: #ffffff;
+            padding: 13px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            &:hover{
+                -webkit-box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
+                box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
+            }
+         }
+         ul > li {
+             display: inline-block;
+             padding: 0px 7px;
+            a{
+                display: block;
+                padding: 10px;
+                border-radius:  5px;
+                background-color: white;
+                margin: 0 auto;
+                -webkit-box-shadow: 0 4 6px rgb(0 0 0 / 0.1);
+                box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+                -webkit-transition: all 0.4s ease-in;
+                transition: all 0.4s ease-in;
+
+                &:hover{
+                    -webkit-box-shadow: 0 10px 16px rgb(0 0 0 / 0.25);
+                box-shadow: 0 10px 16px rgb(0 0 0 / 0.25);
+                }
+                
+            }
+             svg{
+                 font-size: 1.5rem;
+                 color: $main-color;
+             }
+         }
+    }
+        
+    }
+
+    @media only screen and (max-width: 968px) {
+		flex-direction: column;
+	}
+}
+
+
+@media (max-width: 768px){
+   .home{
+       flex-direction: column;
+       
+       img{
+         max-width: 150px;
+        }
+
+       .intro{
+           width:100%;
+           text-align: center;
+       }
+
+       .info{
+           justify-content: center;
+       }
+   }
+}

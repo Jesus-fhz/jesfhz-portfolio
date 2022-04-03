@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: $primary-color;
     color:  #ffffff;
@@ -41,4 +41,10 @@
 
     }
     
+}
+
+@media (max-width: 768px){
+    .sidebar {
+        display: none;
+    }
 }

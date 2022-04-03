@@ -3,7 +3,9 @@
 
 $main-color: #253439;
 $primary-color:#0F1F24;
-$background-body: #f7f7f7;
+$background-body: #ededed;
+$main-font-color: #333333;
+$secondary-font-color: #676f79;
 
 *{
   box-sizing: border-box !important;
@@ -29,7 +31,20 @@ ul{
  
 }
 .container{
-  max-width: 100px;
+  width: 100%;
+  max-width: 1000px;
   margin:  auto;
   
+}
+
+
+@media (max-width: 768px){
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  html{
+    font-size: 12px;
+  }
 }
