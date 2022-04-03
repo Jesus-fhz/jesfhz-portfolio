@@ -1,0 +1,54 @@
+@import "./global.scss";
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+   
+    h1{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 40px;
+        margin-left: 1px;
+        color: $main-color;
+        max-width: 215px;
+        border-bottom: 2px solid $main-color;
+    }
+    div{
+        padding: 60px;
+        border-radius: 10px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1 2px rgb(0 0 0 / 0.1);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
+        p{
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: $secondary-font-color;
+            text-align: justify;
+            line-height: 1.5em;
+        }
+        span{
+            font-weight: 500;
+            color: $main-font-color;
+        }
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    .about{
+        align-items: center;
+        height: 100%;
+        h1{
+        margin-bottom: 10px;
+
+        }
+        div{
+            padding: 30px;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+  }

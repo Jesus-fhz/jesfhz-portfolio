@@ -11,7 +11,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Home: React.FC = () => {
 
     return( 
-        <section className="home">
+        <section className="home" id="home">
             <div className="avatar">
                 <img src={avatar}  className="avatar" alt="Jesus Flores" />                
             </div>

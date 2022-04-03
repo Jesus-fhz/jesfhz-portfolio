@@ -1,6 +1,9 @@
 import React from 'react';
+import About from './components/About';
 import Home from './components/Home';
 import Sidebar from './components/sidebar';
+
+
 
 function App() {
   return (
@@ -8,10 +11,10 @@ function App() {
       <Sidebar/>
       <div className="wrapper">
         <div className="container">
-          <Home/>
+          <Home />
+          <About />
         </div>
       </div>
-      
     </>
   );
 }

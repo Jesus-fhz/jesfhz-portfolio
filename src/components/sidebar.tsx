@@ -7,18 +7,24 @@ import { faBriefcase, faCode, faEnvelope, faHouseUser,  faUserLarge  } from "@fo
 import '../styles/sidebar.scss'
 const Sidebar: React.FC = () => {
 
+
+    const scroll = (target: string) => {
+        let element = document.getElementById(target);
+        element && element.scrollIntoView({ behavior: "smooth", block: "center"})
+    }
+
     return( 
     <HashRouter>
         <section className="sidebar">
             <ul>
-                <li> 
+                <li onClick={()=>scroll("home")}> 
                     <Link to="#">
                         <FontAwesomeIcon icon={faHouseUser}/>
                         <span>Home</span>
                     </Link>
                 </li>
-                <li> 
-                    <Link to="#">
+                <li onClick={()=>scroll("about")}>  
+                    <Link to="#"  >
                         <FontAwesomeIcon icon={faUserLarge}/>
                         <span>About</span>
                     </Link>
