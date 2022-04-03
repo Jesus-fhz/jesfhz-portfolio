@@ -1,10 +1,18 @@
 import React from 'react';
+import Home from './components/Home';
+import Sidebar from './components/sidebar';
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <>
+      <Sidebar/>
+      <div className="wrapper">
+        <div className="container">
+          <Home/>
+        </div>
+      </div>
+      
+    </>
   );
 }
 

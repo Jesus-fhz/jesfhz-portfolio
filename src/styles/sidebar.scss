@@ -1,0 +1,44 @@
+@import "./global.scss";
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: $primary-color;
+    color:  #ffffff;
+    gap: 0px;
+    padding: 0px;
+
+    ul > li {
+        font-size: 1.2rem;
+        -webkit-transition-duration: 0.7s;
+        transition-duration: 0.7s;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 15px;
+
+
+        a{
+            display: inline-block;
+            font-weight: 200;
+            padding: 15px 10px;
+
+        }
+        &:hover{
+            background-color: $main-color;
+            -webkit-box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
+            box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
+        }
+        
+      
+        span{
+            padding: 0px 20px;
+            text-align: left;
+        }
+        
+
+    }
+    
+}
