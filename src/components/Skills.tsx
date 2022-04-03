@@ -25,11 +25,11 @@ import '../styles/skills.scss'
 const Skills: React.FC = () => {
 
     return( 
-        <section className="skills" id="skills">
+        <section className="skills main-setting" id="skills">
             <span>
-                <h1>Skills</h1>
+                <h1 className="title-panels">Skills</h1>
             </span>
-            <div className="skills-svg">
+            <div className="skills-svg panels">
                 <ul>
                     <li>
                         <div className="svg-container">
@@ -135,7 +135,6 @@ const Skills: React.FC = () => {
                             <img src={git} alt="git" />
                         </div>
                         <p>Version Control</p>
-
                     </li>
                     <li>
                         <div className="svg-container">

@@ -10,7 +10,7 @@ const Sidebar: React.FC = () => {
 
     const scroll = (target: string) => {
         let element = document.getElementById(target);
-        element && element.scrollIntoView({ behavior: "smooth", block: "center"})
+        element && element.scrollIntoView({ behavior: "smooth", block: "start"})
     }
 
     return( 
@@ -35,7 +35,7 @@ const Sidebar: React.FC = () => {
                         <span>Skills</span>
                     </Link>
                 </li>
-                <li>
+                <li onClick={()=>scroll("projects-section")}>
                     <Link to="#">
                         <FontAwesomeIcon icon={faBriefcase}/>
                         <span>Projects</span>

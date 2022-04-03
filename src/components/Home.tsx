@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                 A <span>Full-Stack Software Engineer</span> with a love for problem-solving and a desire to continuously learn. 
                 </p>
                 <div className="info">
-                    <button>Resume</button>
+                    <button className="btn">Resume</button>
                     <ul>
                         <li> <a href="https://www.linkedin.com/in/jesus-fhz/" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faLinkedin}/></a> </li>
                         <li> <a href="https://github.com/Jesus-fhz" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faGithub}/> </a>  </li>
