@@ -3,6 +3,7 @@ import React from "react";
 import mfc from '../images/mfc.png'
 import unleashed from '../images/unleashed.png'
 import trading from '../images/trading.png'
+import tictactoe from '../images/tictactoe.png'
 
 import '../styles/projects.scss'
 
@@ -76,20 +77,21 @@ const Projects: React.FC = () => {
                 </div>
                 <div className="projects">
                 <div className="project-img">
-                            <img src={mfc} alt="" />
+                            <img src={tictactoe} alt="" />
                         </div>
                         <div className="project-info">
                             <h1> Tic Tac Toe </h1>
-                            <p><span>Utility-driven, MMA-inspired NFT game.</span> The Metaverse Fighting Championship (MFC) is a blockchain game that allows participation through ownership of NFTs.</p>
+                            <p> It's a variation of the game Tic Tac Toe, where you can also change size of the board, play 1 v 1 and/or agianst an AI. Tha <span>
+                            AI was built using the algorithm MinMax</span>  </p>
                             <div className="tech-stack"> 
                                 <p>
                                     <span>Tech Stack: </span>
-                                    Html, Sass, VanillaJS, TypeScript, React, GraphQL, XState, NodeJs, Apollo-server, Mongoose, MongoDB
+                                    Html, Css, VanillaJS, MinMax Algorithm
                                  </p>
                             </div>
                             <div className="actions"> 
-                                <a href="https://metaverse-fc.netlify.app/" rel="noreferrer"  target="_blank" > DEMO </a>
-                                <a href="https://github.com/thelorddoyle/mfc-front-end"  rel="noreferrer"   target="_blank"> REPO </a>
+                                <a href="https://jesus-fhz.github.io/tic-tac-toe/" rel="noreferrer"  target="_blank" > DEMO </a>
+                                <a href="https://github.com/Jesus-fhz/tic-tac-toe"  rel="noreferrer"   target="_blank"> REPO </a>
                             </div>
                         </div>
                 </div>
