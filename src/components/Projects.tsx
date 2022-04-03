@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
                             <img src={mfc} alt="" />
                         </div>
                         <div className="project-info">
-                            <h1> Metaverse Fighting Championship </h1>
+                            <h1> Tic Tac Toe </h1>
                             <p><span>Utility-driven, MMA-inspired NFT game.</span> The Metaverse Fighting Championship (MFC) is a blockchain game that allows participation through ownership of NFTs.</p>
                             <div className="tech-stack"> 
                                 <p>
