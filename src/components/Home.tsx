@@ -25,8 +25,8 @@ const Home: React.FC = () => {
                     <button>Resume</button>
                     <ul>
                         <li> <a href="https://www.linkedin.com/in/jesus-fhz/" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faLinkedin}/></a> </li>
-                        <li> <a href="https://www.linkedin.com/in/jesus-fhz/" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faGithub}/> </a>  </li>
-                        <li> <a href="https://www.linkedin.com/in/jesus-fhz/" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faEnvelope}/></a>  </li>
+                        <li> <a href="https://github.com/Jesus-fhz" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faGithub}/> </a>  </li>
+                        <li> <a href="mailto: abc@example.com" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faEnvelope}/></a>  </li>
                     </ul>
                 </div>
             </div>

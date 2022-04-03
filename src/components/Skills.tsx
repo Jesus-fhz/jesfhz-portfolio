@@ -74,6 +74,13 @@ const Skills: React.FC = () => {
                     </li>
                     <li>
                         <div className="svg-container">
+                            <img src={vue} alt="vue" />
+                        </div>
+                        <p>Vue</p>
+
+                    </li>
+                    <li>
+                        <div className="svg-container">
                             <img src={nodejs} alt="nodejs" />
                         </div>
                         <p>NodeJs</p>
@@ -82,7 +89,7 @@ const Skills: React.FC = () => {
                         <div className="svg-container">
                             <img src={express} alt="express" />
                         </div>
-                        <p>Express</p>
+                        <p>ExpressJS</p>
                     </li>
                     <li>
                         <div className="svg-container">
@@ -114,13 +121,6 @@ const Skills: React.FC = () => {
                             <img src={postgresql} alt="postgresql" />
                         </div>
                         <p>Postgresql</p>
-
-                    </li>
-                    <li>
-                        <div className="svg-container">
-                            <img src={html} alt="html" />
-                        </div>
-                        <p>Html</p>
 
                     </li>
                     <li>
