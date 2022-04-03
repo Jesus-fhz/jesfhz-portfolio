@@ -2,6 +2,7 @@ import React from "react";
 
 import mfc from '../images/mfc.png'
 import unleashed from '../images/unleashed.png'
+import trading from '../images/trading.png'
 
 import '../styles/projects.scss'
 
@@ -54,7 +55,7 @@ const Projects: React.FC = () => {
                 </div>
                 <div className="projects">
                 <div className="project-img">
-                            <img src={mfc} alt="" />
+                            <img src={trading} alt="" />
                         </div>
                         <div className="project-info">
                             <h1> Trading Journal </h1>
