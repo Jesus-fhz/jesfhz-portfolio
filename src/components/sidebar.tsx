@@ -29,7 +29,7 @@ const Sidebar: React.FC = () => {
                         <span>About</span>
                     </Link>
                 </li>
-                <li>
+                <li onClick={()=>scroll("skills")}>
                     <Link to="#">
                         <FontAwesomeIcon icon={faCode}/>
                         <span>Skills</span>
