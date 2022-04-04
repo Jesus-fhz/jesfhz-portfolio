@@ -77,7 +77,21 @@ ul{
   border-radius: 10px;
   background-color: #fff;
 }
+.loading{
+  max-width: 40px;
+  margin: -20px auto -20px auto;
+  img{
+    max-width: 100%;
+    padding: 0px;
+  }
+}
 
+.message{
+  p{
+    font-size: 1.2rem !important;
+    padding: 15px 0px !important;
+  }
+}
 @media (max-width: 1100px){
   .wrapper{
     width: 100%;

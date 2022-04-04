@@ -6,13 +6,18 @@ import Loading from "./Loading";
 
 const Contact: React.FC = () => {
     const form  = useRef() as React.MutableRefObject<HTMLFormElement>;
+    const [message,setMessage] = useState<string | false>('');
+    const [loading, setLoading] = useState<boolean>(false);
     const sendEmail = (e: React.FormEvent) => {
+      setLoading(true);
       e.preventDefault();
       emailjs.sendForm(`${process.env.REACT_APP_EMAIL_SERVICE_ID}`, `${process.env.REACT_APP_EMAIL_TEMPLATE_ID}`, form.current,`${process.env.REACT_APP_EMAIL_USER_ID}`)
         .then((result) => {
-            console.log(result);
+            setMessage('Your email has been sent. I will get back to you as soon as posible.')
+            setLoading(false);
         }, (error) => {
-            console.log(error);
+            setMessage('Sorry, something went wrong.')
+            setLoading(false);
         });
     }
     return( 
@@ -20,7 +25,6 @@ const Contact: React.FC = () => {
             <span>
                 <h1 className="title-panels"> Contact</h1>
             </span>
-            <Loading/>
             <div className="panels">
                 <div className="form-info">
                     <p> Get in touch or email me: <span><a href="mailto: dev@jesusflores.io"> dev@jesusflores.io </a></span></p>
@@ -38,6 +42,14 @@ const Contact: React.FC = () => {
                             </button>
                         </div>
                     </form>
+                    {
+                        message &&  
+                        <div className="message">
+                            <p>{message}</p>
+                        </div>
+                    }
+                    
+                    { loading && <Loading/> }
                </div>
             </div>
         </section>
