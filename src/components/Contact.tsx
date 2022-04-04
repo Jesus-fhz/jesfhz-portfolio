@@ -4,7 +4,6 @@ import '../styles/contact.scss';
 
 
 const Contact: React.FC = () => {
-
     const form: any = useRef();
     const sendEmail = (e: any) => {
       e.preventDefault();
@@ -29,6 +28,7 @@ const Contact: React.FC = () => {
                         <input type="text" name="user_subject" placeholder="Subject" required={true}/>
                         <textarea name="message"  placeholder="Message..." required={true} id="" cols={30} rows={10}></textarea>
                         <div className="btn-submit"> 
+                            <div className="g-recaptcha" data-sitekey={`${process.env.REACT_APP_EMAIL_CAPTCHA}`}></div>
                             <button type="submit" className="btn">
                                 Send
                             </button>
