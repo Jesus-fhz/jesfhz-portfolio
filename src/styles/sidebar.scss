@@ -10,7 +10,8 @@
     color:  #ffffff;
     gap: 0px;
     padding: 0px;
-
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
     ul > li {
         font-size: 1.2rem;
         -webkit-transition-duration: 0.7s;
@@ -45,6 +46,6 @@
 
 @media (max-width: 1100px){
     .sidebar {
-        display: none;
+       width: 0%;
     }
 }

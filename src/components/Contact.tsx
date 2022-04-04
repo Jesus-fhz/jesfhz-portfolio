@@ -48,7 +48,6 @@ const Contact: React.FC = () => {
                             <p>{message}</p>
                         </div>
                     }
-                    
                     { loading && <Loading/> }
                </div>
             </div>
