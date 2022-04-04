@@ -86,6 +86,14 @@ ul{
   }
 }
 
+.bars-menu{
+  position: fixed;
+  font-size: 2rem;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
 .message{
   p{
     font-size: 1.2rem !important;
@@ -100,6 +108,9 @@ ul{
   .container{
     padding:0px 10px;
   }
+  .bars-menu{
+    display: block;
+  }
   
 }
 
@@ -108,3 +119,4 @@ ul{
     font-size: 12px;
   }
 }
+

@@ -89,8 +89,14 @@
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 1100px){
     .projects-section{
+        margin-top: 75px;
+        justify-content: center;
+        align-items: center;
+        .title-panels{
+            padding: 0px;
+        }
         .panels{
             padding: 10px;
             background: transparent;

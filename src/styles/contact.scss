@@ -6,7 +6,7 @@
             p{
                 text-align: center;
                 font-size: 1.4rem;
-                padding: 0px 0px 20px 0px;
+                padding: 0px 0px 10px 0px;
                 color: $secondary-font-color;
                 font-weight: 300;
                 margin-bottom: 25px;
@@ -36,13 +36,15 @@
             }
             form{
                 width: 100%;
+                max-height: 450px;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 40px;
+                column-gap: 20px;
+                row-gap: 30px;
                 input{
                     all:unset;
                     border: 1px solid rgb(208, 208, 208);
-                    padding: 10px 7px;
+                    padding: 10px 5px;
                     border-radius: 5px;
                     color: $main-font-color;
                     font-weight: 300;
@@ -85,9 +87,16 @@
     
 }
 
-@media(max-width: 768px){
+@media(max-width: 1100px){
     .contact{
+        justify-items: center;
+        align-items: center;
+        padding: 10px;
+        h1{
+            text-align: center
+        }
         .panels{
+            width: 100%;
             padding: 10px;
             background: transparent;
             .form-info{

@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                         <input type="text" name="user_name"  placeholder="Name" required={true} />
                         <input type="email" name="user_email"  placeholder="Email" required={true} />
                         <input type="text" name="user_subject" placeholder="Subject" required={true}/>
-                        <textarea name="message"  placeholder="Message..." required={true} id="" cols={30} rows={10}></textarea>
+                        <textarea name="message"  placeholder="Message..." required={true} id="" rows={4}></textarea>
                         <div className="catpcha">
                             <div className="g-recaptcha" data-sitekey={`${process.env.REACT_APP_CAPTCHA}`}></div>
                         </div>

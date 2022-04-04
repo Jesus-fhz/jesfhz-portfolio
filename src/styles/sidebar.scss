@@ -46,6 +46,20 @@
 
 @media (max-width: 1100px){
     .sidebar {
-       width: 0%;
+       opacity: 0;
+       width: 150px;
+       z-index: 1;
+       ul{
+           display: none;
+       }
+    }
+
+    .active{
+        opacity: 1;
+        width: 150px;
+        ul{
+            animation-delay: 1s;
+            display: inline-block;
+        }
     }
 }
