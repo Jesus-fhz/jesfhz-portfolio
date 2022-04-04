@@ -41,7 +41,7 @@ const Sidebar: React.FC = () => {
                         <span>Projects</span>
                     </Link>
                 </li>
-                <li> 
+                <li onClick={()=>scroll("contact")}> 
                     <Link to="#">
                         <FontAwesomeIcon icon={faEnvelope}/>
                         <span>Contact</span>
