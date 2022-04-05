@@ -16,6 +16,7 @@ const Contact: React.FC = () => {
             setMessage('Your email has been sent. I will get back to you as soon as posible.')
             setLoading(false);
         }, (error) => {
+            console.log(error);
             setMessage('Sorry, something went wrong.')
             setLoading(false);
         });
