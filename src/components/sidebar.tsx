@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import { Link,HashRouter } from "react-router-dom"
+import React,{useEffect, useState} from "react";
+import { NavLink,HashRouter } from "react-router-dom"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faCode, faEnvelope, faHouseUser,  faUserLarge, faBars,  faClose  } from "@fortawesome/free-solid-svg-icons";
@@ -18,41 +18,43 @@ const Sidebar: React.FC = () => {
         !showHide ? setShowHide('active') : setShowHide(false);
     }
 
+    
+
     return( 
         <>
         <FontAwesomeIcon className="bars-menu" icon={!showHide ? faBars : faClose} onClick={showHideSidebar}/>
         <HashRouter>
             <section className={`sidebar  ${showHide}`}>
                 <ul>
-                    <li onClick={()=>scroll("home")}> 
-                        <Link to="#">
+                    <li onClick={()=>scroll("home")} > 
+                        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faHouseUser}/>
-                            <span>Home</span>
-                        </Link>
+                            <span >Home</span>
+                        </NavLink>
                     </li>
                     <li onClick={()=>scroll("about")}>  
-                        <Link to="#"  >
+                        <NavLink to="about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faUserLarge}/>
                             <span>About</span>
-                        </Link>
+                        </NavLink>
                     </li>
-                    <li onClick={()=>scroll("skills")}>
-                        <Link to="#">
+                    <li onClick={()=>scroll("skills")} >
+                        <NavLink to="skills" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faCode}/>
                             <span>Skills</span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li onClick={()=>scroll("projects-section")}>
-                        <Link to="#">
+                        <NavLink to="projects" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faBriefcase}/>
                             <span>Projects</span>
-                        </Link>
+                        </NavLink>
                     </li>
-                    <li onClick={()=>scroll("contact")}> 
-                        <Link to="#">
+                    <li onClick={()=>scroll("contact")} > 
+                        <NavLink to="contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faEnvelope}/>
                             <span>Contact</span>
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </section>
@@ -66,6 +68,4 @@ export default Sidebar
 
 
             
-            
-            
-            
+  
