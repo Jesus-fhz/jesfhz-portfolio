@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
                         <NavLink to="about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                             <FontAwesomeIcon icon={faUserLarge}/>
                             <span>About</span>
-                        </NavLink>
+                       </NavLink>
                     </li>
                     <li onClick={()=>scroll("skills")} >
                         <NavLink to="skills" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>

@@ -1,44 +1,41 @@
-@import 'reset-css';
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "reset-css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 $main-color: #253439;
-$primary-color:#0F1F24;
+$primary-color: #0f1f24;
 $background-body: #ededed;
 $main-font-color: #333333;
 $secondary-font-color: #676f79;
 
-*{
+* {
   box-sizing: border-box !important;
-
 }
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: $background-body;
-  }
-  
+  font-family: "Nunito", sans-serif;
+  background-color: $background-body;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.wrapper{
+.wrapper {
   width: calc(100% - 250px);
   margin-left: 250px;
- 
 }
-.container{
+.container {
   width: 100%;
   max-width: 1100px;
-  margin:  auto;
+  margin: auto;
   padding: 0px 20px;
-  
 }
 
-.main-setting{
+.main-setting {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -46,48 +43,46 @@ ul{
   height: 100vh;
 }
 
-.btn{
-    all: unset;
-    background-color: $main-color;
-    color: #ffffff;
-    padding: 13px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    &:hover{
-        -webkit-box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
-        box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
-    }
+.btn {
+  all: unset;
+  background-color: $main-color;
+  color: #ffffff;
+  padding: 13px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  &:hover {
+    -webkit-box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
+    box-shadow: 0 10px 28px rgb(0 0 0 / 0.4);
+  }
 }
 
-
-.title-panels{
+.title-panels {
   font-size: 3rem;
-        font-weight: 500;
-        margin-bottom: 40px;
-        margin-left: 1px;
-        color: $main-color;
-        max-width: 215px;
-        border-bottom: 2px solid $main-color;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: $main-color;
+  width: fit-content;
+  border-bottom: 1px solid $secondary-font-color;
 }
 
-.panels{
+.panels {
   padding: 60px;
   border-radius: 10px;
   background-color: #fff;
 }
-.loading{
+.loading {
   max-width: 40px;
   margin: 15px auto -30px auto;
-  img{
+  img {
     max-width: 100%;
     padding: 0px;
   }
 }
 
-.footer{
+.footer {
   width: 100%;
   text-align: center;
   background-color: #fff;
@@ -96,7 +91,7 @@ ul{
   font-weight: 500;
 }
 
-.bars-menu{
+.bars-menu {
   position: fixed;
   font-size: 2rem;
   top: 5px;
@@ -104,29 +99,27 @@ ul{
   display: none;
 }
 
-.message{
-  p{
+.message {
+  p {
     font-size: 1.2rem !important;
     padding: 15px 0px !important;
   }
 }
-@media (max-width: 1100px){
-  .wrapper{
+@media (max-width: 1100px) {
+  .wrapper {
     width: 100%;
     margin: 0 auto;
   }
-  .container{
-    padding:0px 10px;
+  .container {
+    padding: 0px 10px;
   }
-  .bars-menu{
+  .bars-menu {
     display: block;
   }
-  
 }
 
-@media(max-width: 768px){
-  html{
+@media (max-width: 768px) {
+  html {
     font-size: 12px;
   }
 }
-
