@@ -89,6 +89,13 @@ ul {
   padding: 20px;
   color: $secondary-font-color;
   font-weight: 500;
+  p{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: $secondary-font-color;
+    padding: 2px;
+    }
 }
 
 .bars-menu {
