@@ -1,7 +1,7 @@
 import React from "react";
 
 import avatar from '../images/avatar-jesus.png';
-import jesus from  '../files/JesusFlores.pdf';
+import jesus from  '../files/JesusFloresResume.pdf';
 import '../styles/home.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
