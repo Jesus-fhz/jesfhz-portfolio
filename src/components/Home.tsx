@@ -19,7 +19,7 @@ const Home: React.FC = () => {
                 <h2> Hello there, I am </h2>
                 <h1>Jesus Flores</h1>
                 <p>
-                A <span>Full-Stack Software Engineer</span> with a love for problem-solving and a desire to continuously learn. 
+                A <span>Full-Stack Software Engineer</span> with a love for problem-solving, a desire to continuously learn and I have a personal interest in <span>decentralisation</span>  and <span>Web3</span> technologies.
                 </p>
                 <div className="info">
                     <a href={jesus} target="_blank" rel="noreferrer" className="btn">Resume</a>
