@@ -1,6 +1,7 @@
 import React from "react";
 
 import mfc from '../images/mfc.png'
+import doggos from '../images/connected.png'
 import unleashed from '../images/unleashed.png'
 import trading from '../images/trading.png'
 import tictactoe from '../images/tictactoe.png'
@@ -15,6 +16,26 @@ const Projects: React.FC = () => {
                 <h1 className="title-panels"> Projects </h1>
             </span>
             <div className="panels">
+            <div className="projects">
+                        <div className="project-img">
+                            <img src={doggos} alt="" />
+                        </div>
+                        <div className="project-info">
+                            <h1> DoggosPunk Nfts </h1>
+                            <p><span>A Simple Nft minting website</span> in the Ethereum rinkeby test network. I used Ethers.js to interact with Ethereum Blockchain and Solidity to build the smart-contract. </p>
+                            <div className="tech-stack"> 
+                                <p>
+                                    <span>Tech Stack: </span>
+                                    React, Ethers.js, Soidity, Openzeppelin, Hardhat.
+                                 </p>
+                            </div>
+                            <div className="actions"> 
+                                <a href="https://funny-khapse-2b44ce.netlify.app//" rel="noreferrer"  target="_blank" > DEMO </a>
+                                <a href="https://github.com/Jesus-fhz/doggosPunk-nft-solidity-project"  rel="noreferrer"   target="_blank"> REPO </a>
+                            </div>
+                        </div>
+                        
+                </div>
                 <div className="projects">
                         <div className="project-img">
                             <img src={mfc} alt="" />
