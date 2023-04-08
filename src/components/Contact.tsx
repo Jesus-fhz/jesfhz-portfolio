@@ -1,10 +1,7 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import "../styles/contact.scss";
-import Loading from "./Loading";
 
 const Contact: React.FC = () => {
-    const form = useRef() as React.MutableRefObject<HTMLFormElement>;
     return (
         <section className='contact main-setting' id='contact'>
             <span>
