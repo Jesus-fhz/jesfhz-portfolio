@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../styles/contact.scss";
 
 const Contact: React.FC = () => {
