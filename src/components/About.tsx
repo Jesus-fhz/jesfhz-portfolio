@@ -10,14 +10,13 @@ const About: React.FC = () => {
             </span>
             <div className='panels'>
                 <p>
-                    I have a bachelor’s degree in <span>Computer Science</span> and a recent{" "}
-                    <span>Software Engineer Graduate from GA</span> with two years of international
-                    commercial experience in web development as a full-stack developer.
-                </p>
-                <p>
-                    I am looking forward to working with an amazing team in a great environment,
-                    where I can use my unique skill-set as a web developer and expand my knowledge
-                    but also continuously add value to the lives of those around me.
+                    I have a bachelor’s degree in <span>Computer Science</span>{" "}
+                    and a <span>Software Engineer Graduate from GA</span> with
+                    more thant 3 years of international commercial experience in
+                    web development as a full-stack developer. With a strong
+                    foundation in both front-end and back-end development, I am
+                    dedicated to crafting efficient, scalable, and user-focused
+                    solutions that deliver real-world impact.
                 </p>
             </div>
         </section>
