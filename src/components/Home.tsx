@@ -23,14 +23,15 @@ const Home: React.FC = () => {
                     expanding my knowledge in the ever-evolving world of
                     technology.
                 </p>
+                <p>P.S: Currently building something cool with my friends 😃</p>
                 <div className='info'>
-                    <a
+                    {/* <a
                         href={jesus}
                         target='_blank'
                         rel='noreferrer'
                         className='btn'>
                         Resume
-                    </a>
+                    </a> */}
                     <ul>
                         <li>
                             {" "}
