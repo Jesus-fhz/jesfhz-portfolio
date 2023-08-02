@@ -11,16 +11,14 @@ function App() {
     return (
         <>
             {/* <Sidebar /> */}
-            <div className='wrapper'>
-                <div className='container'>
-                    <Home />
-                    {/* <About />
+            <div className='container'>
+                <Home />
+                {/* <About />
           <Skills/>
           <Projects/>
           <Contact/> */}
-                </div>
-                {/* <Footer /> */}
             </div>
+            {/* <Footer /> */}
         </>
     );
 }
